@@ -17,3 +17,7 @@ jobs:
       run: make
     - name: make test
       run: make test
+    - name: Coveralls Parallel
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.github_token }}
